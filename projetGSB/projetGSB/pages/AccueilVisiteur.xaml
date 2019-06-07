@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.AccueilVisiteur">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="accueil visiteur"></Label>
+            <Button x:Name="btnInsererVisiteur" Clicked="BtnInsererVisiteur_ClickedAsync" Text="Inserer un visiteur"></Button>
+            <Button x:Name="btnModifierVisiteur" Clicked="BtnModifierVisiteur_ClickedAsync" Text="Modifier un visiteur"></Button>
+            <Button x:Name="btnListerVisiteur" Clicked="BtnListerVisiteur_ClickedAsync" Text="Liste des visiteurs"></Button>
+            <Button x:Name="btnRetour" Clicked="BtnRetour_ClickedAsync" Text="retour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

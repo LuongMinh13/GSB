@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.ModifierRegions">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label>Code Région</Label>
+            <Entry x:Name="coderegion" Text="{Binding CODE_REG}"></Entry>
+            
+            <Label>Nom Région</Label>
+            <Entry x:Name="nomregion" Text="{Binding REG_NOM}"></Entry>
+            
+            <Label>Code Secteur</Label>
+            <Entry x:Name="codesecteur" Text="{Binding CODE_SEC}"></Entry>
+            
+            <Button Text="Valider" Clicked="Button_Clicked" x:Name="btnValider"></Button>
+            <Button Text="Retour" Clicked="BtnRetour_ClickedAsync" x:Name="btnRetour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

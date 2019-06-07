@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.ListerRegion">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lvRegion" ItemSelected="LvRegion_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label WidthRequest="200" Text="{Binding REG_NOM}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Retour" Clicked="BtnRetour_ClickedAsync" x:Name="btnRetour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
